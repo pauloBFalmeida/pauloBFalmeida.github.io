@@ -7,5 +7,9 @@ visit_github: "Visit my GitHub"
 about_me: "About Me"
 projects: "Projects"
 # About me
-about_title: "My Expertise"
-about_description: "About me"
+about_title: "About me"
+about_description: "Hi, I'm Paulo Almeida, a computer scientist graduating in game design. Welcome to my portfolio!<br>In my spare time, I enjoy gaming with friends and participating in GameJams."
+# Projects
+projects_professional_title: "Professional Work"
+projects_personal_title: "Personal Projects"
+btn_details: "Details"

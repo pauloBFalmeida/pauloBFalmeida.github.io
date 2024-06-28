@@ -1,6 +1,8 @@
+<!-- Professional Projects -->
 <div class="user-details">
-  <h1> Featured Projects </h1>
+  <h1> {{site.data.[page.lang].projects_professional_title}} </h1>
 </div>
+
 <div class="user-projects">
   <div class="images-right">
     <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
@@ -14,6 +16,26 @@
     <a class="project-link" href="/project">Check it out</a>
   </div>
 </div>
+
+
+<!-- <div class="user-projects">
+  {% capture example_content %}
+    {% include projects/proj.md %}
+  {% endcapture %}
+  {{ example_content | markdownify }}
+</div> -->
+
+
+<div class="user-projects project-right">
+  {% include projects/proj1.html %}
+</div>
+
+<!-- Personal Projects -->
+<div class="user-details">
+  <h1> {{site.data.[page.lang].projects_personal_title}} </h1>
+</div>
+
+
 <div class="user-projects">
   <div class="images-left">
     <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
@@ -24,6 +46,6 @@
       <li> Featured Skills</li>
     </ul>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <a class="project-link" href="#">{{site.data.[page.lang].btn_details}}</a>
   </div>
 </div>
