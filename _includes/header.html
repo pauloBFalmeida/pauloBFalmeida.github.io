@@ -34,7 +34,7 @@
 <script>
     // copy email to clipboard
     document.getElementById('emailIcon').addEventListener('click', function() {
-        var text = 'oie'; // Get text to copy
+        var text = '{{ site.email }}'; // Get text to copy
         navigator.clipboard.writeText(text) // Copy text to clipboard
             .then(function() {
                 console.log('Email copied to clipboard');
@@ -46,6 +46,6 @@
     });
     // change text from email after click
     document.getElementById('emailIcon').addEventListener('mouseout', function() {
-        document.getElementById('emailText').textContent = 'Default Text';
+        document.getElementById('emailText').textContent = 'Copy e-mail⠀⠀';
     });
 </script>
