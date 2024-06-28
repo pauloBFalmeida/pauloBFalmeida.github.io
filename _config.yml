@@ -6,15 +6,18 @@ url: https://paulobfalmeida.github.io # the base hostname & protocol for your si
 
 # User settings
 username: Paulo B F Almeida
-user_title: Game Developer
-user_description: Sobre mim.
+user_title: Game Designer
 email: paulobfalmeida@gmail.com
-github_username:  paulobfalmeida
-# twitter_username:
-# gplus_username:
+github_username: paulobfalmeida
+
+lang: en
+languages: ["en", "pt"]
 
 # Google-analytics
 google-analytics:
   id: ""
 
 exclude: ['package.json', 'src' , 'node_modules']
+
+plugins:
+  - jekyll-seo-tag

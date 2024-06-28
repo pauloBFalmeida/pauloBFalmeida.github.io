@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="{{ page.lang }}">
+<link rel="shortcut icon" type="image/png" href="favicon.png">
   {% include head.html %}
   <body>
       {% include header.html %}
@@ -8,6 +9,9 @@
       </section>
       <section id="projects">
         {% include projects.html %}
+      </section>
+      <section id="tools">
+        {% include tools.html %}
       </section>
         {{ content }}
       {% include footer.html %}
