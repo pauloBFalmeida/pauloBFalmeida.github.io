@@ -1,8 +1,9 @@
 <div class="topMenu">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+    <a href="#home">{{site.data.[page.lang].menu_home}}</a>
+    <a href="#about">{{site.data.[page.lang].menu_about}}</a>
+    <a href="#projects">{{site.data.[page.lang].menu_projects}}</a>
+    <a href="#resume">{{site.data.[page.lang].menu_resume}}</a>
+    <a href="#contact">{{site.data.[page.lang].menu_contact}}</a>
 </div>
 
 <style>
@@ -12,7 +13,7 @@
         width: 100%;
         background-color: #1a222c;
         color: #fff;
-        padding: 10px 0;
+        padding: 5px 0;
         text-align: center;
         z-index: 1000; /* Ensures the header is above other content */
     }
@@ -23,9 +24,9 @@
         display: inline-block;
     }
     .topMenu a:hover {
-        background-color: #575757;
+        background-color: {{site.color_btn_hover}};
     }
     .content {
-        padding-top: 60px; /* Space for the fixed header */
+        padding-top: 20px; /* Space for the fixed header */
     }
   </style>

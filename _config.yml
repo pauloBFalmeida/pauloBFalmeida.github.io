@@ -21,3 +21,7 @@ exclude: ['package.json', 'src' , 'node_modules']
 
 plugins:
   - jekyll-seo-tag
+
+# Colors
+color_btn_hover: '#394b60'
+# 54516a

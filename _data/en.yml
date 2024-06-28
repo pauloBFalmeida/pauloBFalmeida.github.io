@@ -1,5 +1,12 @@
 welcome_message: "Welcome to my site!"
 about_text: "This is the English version of the site."
+# Top Menu
+menu_home: "Home"
+menu_about: "About"
+menu_projects: "Projects"
+menu_resume: "Resume"
+menu_contact: "Contact"
+
 # Header
 copy_email: "Copy e-mail⠀⠀"
 email_copied: "e-mail copied!⠀"
