@@ -15,7 +15,10 @@
         color: #fff;
         padding: 5px 0;
         text-align: center;
-        z-index: 1000; /* Ensures the header is above other content */
+        z-index: 1000;
+        transition:color .3s ease-out,
+        background-color .3s ease-out,
+        border-color .3s ease-out;
     }
     .topMenu a {
         color: white;
@@ -25,6 +28,9 @@
     }
     .topMenu a:hover {
         background-color: {{site.color_btn_hover}};
+        transition:color .3s ease-in,
+        background-color .3s ease-in,
+        border-color .3s ease-in;
     }
     .content {
         padding-top: 20px; /* Space for the fixed header */

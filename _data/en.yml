@@ -8,9 +8,10 @@ menu_resume: "Resume"
 menu_contact: "Contact"
 
 # Header
-copy_email: "Copy e-mail⠀⠀"
-email_copied: "e-mail copied!⠀"
+copy_email:   "Copy e-mail"
+email_copied: "e-mail copied!"
 visit_github: "Visit my GitHub"
+visit_itch:   "Visit my Itch.io"
 about_me: "About Me"
 projects: "Projects"
 # About me
