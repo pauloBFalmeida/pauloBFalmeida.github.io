@@ -8,7 +8,7 @@
 .header{z-index:1;text-align:center;
   display: flex; flex-direction: column; align-items: center;
 color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}.header
-.site-title{font-size:50px;display:block;line-height:1;color:#fff}@media only screen and (min-width:550px){.header .site-title{margin:0;font-size:70px}}.header
+.site-title{font-size:50px;display:block;line-height:1;color:#fff}@media only screen and (min-width:550px){.header .site-title{margin:0;font-size:85px}}.header
 .site-description{font-size:20px;display:block;line-height:1;color:#fff;margin-top:10px}@media only screen and (min-width:550px){.header .site-description{font-size:40px}}.header-links{margin:10px}.header-links .link{color:#fff;text-decoration:none;font-size:15px;margin:10px}@media only screen and (min-width:550px){.header-links .link{font-size:20px}}
 .header-icons{display:flex;flex-direction: column; align-items: start; padding-left:0%;}.down,
 .header-icons .icon{color:#fff;text-align:center}
@@ -22,28 +22,31 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
 .down
 .icon:hover,.footer a:active,.footer a:hover{color:#4b5664}
 #about{width:90%;margin:0 auto;max-width:960px}@media only screen and (min-width:550px)
-{#about{width:80%}}.tech{margin:10px}.user{text-align:center;font-size:60px;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between}.user p{font-size:16px}@media only screen and (min-width:550px){.user{flex-wrap:nowrap;font-size:75px}}.user-details{text-align:center;margin:5px auto}
+{#about{width:80%}}.tech{margin:10px}.user{text-align:center;font-size:60px;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between}.user p{font-size:16px}@media only screen and (min-width:550px){.user{flex-wrap:nowrap;font-size:75px}}
+.user-details{text-align:center;margin:5px auto}
+.user-details h1 {margin-top:45px;}
+
 #projects{display:flex;flex-direction:column;justify-content:space-between;width:90%;max-width:960px;margin:0 auto}@media only screen and (min-width:550px)
 {#projects{width:80%}}
 
-.user-projects{margin:40px auto; display: flex;}
+.user-projects{margin:40px auto; display: flex; flex-flow: row wrap;}
 .user-projects h5,body{margin:0}
 .user-projects li{color:#1a222c;font-size:1.1rem}
 .user-projects p{margin-right:5px}
 .user-projects img{border-radius:5px;
-  max-width:100%;
   width:48%;
-  height:auto;
-  min-width: 440px; min-height: 200px;
+  /* height:auto; */
+  min-width: 400px; min-height: 200px;
+  max-width: 410px;
 }
 
 /* Project right */
-.project-right {display: flex; flex-direction: row-reverse;}
-.project-right img{float:right; width:48%; height:auto}
+.project-right {display: flex; flex-flow: row-reverse wrap;}
+.project-right img{float:right;}
 .project-right .contents{margin-right: 25px; margin-left:0; display: grid;}
 /* Project left */
-.project-left {display: flex; flex-direction: row}
-.project-left img{float:left}
+.project-left {display: flex; flex-flow: row wrap}
+.project-left img{float:left;}
 .project-left .contents{margin-left: 25px; margin-right: 0; display: grid;width:48%}
 
 .contents-info {display:flex; flex-direction: row; align-items: flex-end;
@@ -71,10 +74,11 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
 
 .footer{background:#1a222c;padding:10px 0;margin-top:100px;text-align:center;color:#fff}
 .footer p{margin:8px;}
-.footer-list { display: flex; justify-content: center; }
+.footer-list { display: flex; justify-content: center; flex-flow: row wrap;}
 .footer-icon {text-decoration:none;color:#fff;
-  margin-left: 20px; margin-right: 0px;
   padding-top: 8px; width: 16px; height: 16px;}
+.footer-links {display: inline-flex;
+  margin-left: 20px; margin-right: 0px;}
 
 #tools{width:90%;margin:0 auto;max-width:960px}@media only screen and (min-width:550px)
 {#tools{width:80%}}
@@ -96,7 +100,8 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
 
 .about-text{
   display:flex;
-  flex-direction:row;
+  /* flex-direction:row; */
+  flex-flow: row wrap;
   align-items: flex-end;
   font-size: 20px;
 }
