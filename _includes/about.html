@@ -5,6 +5,13 @@
   <h1> {{site.data.[page.lang].about_title}} </h1>
   <div class="about-text" align="vertical">
     <img alt="Image of myself in a park" src="{{ "/assets/img/photo_myself.jpeg" | prepend: site.baseurl }}" />
-    <p> {{site.data.[page.lang].about_description}} </p>
+    <div>
+      <p> {{site.data.[page.lang].about_description}} </p>
+      <button class="project-link resume-btn" onclick="location.href='{{ site.baseurl }}/en/resume.html';">{{site.data.[page.lang].see_resume}}</button>
+    </div>
   </div>
 </div>
+
+<style>
+  .resume-btn{float:left; margin-left: 5%}
+</style>
