@@ -1,7 +1,19 @@
 <footer class="footer">
     <p>{{site.username}}</p>
-    <p>Link algum</p>
+    <div class="footer-list">
+      <i class="icon fa fa-envelope footer-icon" aria-hidden="true"></i>
+      <p>{{site.email}}</p>
+
+      <a class ="footer-icon" target="_blank" href="{{site.github_link}}">
+        <i class="icon fa fa-github-alt" aria-hidden="true"></i> </a>
+      <p>{{site.github_link}}</p>
+
+      <a class ="footer-icon" target="_blank" href="{{site.itch_link}}">
+        <i class="icon fa fa-gamepad" aria-hidden="true"></i> </a>
+      <p>{{site.itch_link}}</p>
+    </div>
 </footer>
+
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>

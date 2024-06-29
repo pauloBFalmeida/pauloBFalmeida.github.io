@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
-<link rel="shortcut icon" type="image/png" href="favicon.png">
   {% include head.html %}
   <body style='background-color:#f1f2f4'>
       {% include topMenu.html %}
       <section id="home">     {% include header.html %}   </section>
       <section id="about">    {% include about.html %}    </section>
       <section id="projects"> {% include projects.html %} </section>
-      <section id="tools">    {% include tools.html %}    </section>
+
+      <main>
         {{ content }}
+      </main>
+
+      <section id="tools">    {% include tools.html %}    </section>
       {% include footer.html %}
   </body>
 </html>
