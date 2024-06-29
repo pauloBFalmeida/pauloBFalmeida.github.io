@@ -4,11 +4,13 @@
   <body style='background-color:#f1f2f4'>
       {% include topMenu.html %}
       <!-- espace for top menu -->
-      <div style="height: 20px;"></div>
+      <div style="height: 30px;"></div>
 
       <main class="main-layout">
         {{ content }}
       </main>
       {% include footer.html %}
   </body>
+
+  <link rel="stylesheet" href="{{ "/assets/css/pages.css" | prepend: site.baseurl }}">
 </html>

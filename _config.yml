@@ -11,6 +11,7 @@ email: paulobfalmeida@gmail.com
 github_username: paulobfalmeida
 github_link: https://github.com/paulobfalmeida
 itch_link: https://paulobfalmeida.itch.io/
+cv_link: http://lattes.cnpq.br/8271715880695926
 
 lang: en
 languages: ["en", "pt"]
@@ -26,4 +27,5 @@ plugins:
 
 # Colors
 color_btn_hover: '#394b60'
-# 54516a
+# #54516a
+# #1a222c
