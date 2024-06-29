@@ -1,5 +1,4 @@
-welcome_message: "Welcome to my site!"
-about_text: "This is the English version of the site."
+language_name: "English"
 # Top Menu
 menu_home: "Home"
 menu_about: "About"

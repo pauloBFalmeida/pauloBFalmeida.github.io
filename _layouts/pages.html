@@ -3,8 +3,10 @@
   {% include head.html %}
   <body style='background-color:#f1f2f4'>
       {% include topMenu.html %}
-      <h2>{{ page.lang }}</h2>
-      <main>
+      <!-- espace for top menu -->
+      <div style="height: 20px;"></div>
+
+      <main class="main-layout">
         {{ content }}
       </main>
       {% include footer.html %}

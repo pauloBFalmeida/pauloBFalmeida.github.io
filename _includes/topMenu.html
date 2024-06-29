@@ -4,6 +4,15 @@
     <a href="{{site.url}}/pages/projects">{{site.data.[page.lang].menu_projects}}</a>
     <a href="{{site.url}}/pages/about#resume">{{site.data.[page.lang].menu_resume}}</a>
     <a href="{{site.url}}/pages/about#contact">{{site.data.[page.lang].menu_contact}}</a>
+    <div class="dropdown">
+      <button class="dropbtn">Language</button>
+      <div class="dropdown-content">
+       <a href="">
+         {{site.data.["en"].language_name}}</a>
+       <a href="{{site.url}}/pt/">
+         {{site.data.["pt"].language_name}}</a>
+      </div>
+    </div>
 </div>
 
 <style>
@@ -35,4 +44,47 @@
     .content {
         padding-top: 20px; /* Space for the fixed header */
     }
+
+    /* Dropdown Button */
+    .dropbtn {
+      background-color: #1a222c;
+      color: #fff;
+      padding: 14px 20px;
+      /* font-size: 16px; */
+      border: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      left: 7%;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: {{site.color_btn_hover}};
+     min-width: 100%;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+     color: white;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: white; color: black }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: {{site.color_btn_hover}};}
   </style>
