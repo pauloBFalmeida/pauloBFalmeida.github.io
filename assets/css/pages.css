@@ -8,7 +8,6 @@
   margin: auto;
 }
 
-
 .resume-work {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -30,6 +29,13 @@
   max-width: 75%;
   text-align: justify;
   margin: auto;
+}
+
+.interests {
+  max-width: 60%;
+  text-align: justify;
+  margin: auto;
+  font-size: 17px;
 }
 
 .contact-info{
