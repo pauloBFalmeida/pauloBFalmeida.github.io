@@ -42,14 +42,14 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
 
 /* Project right */
 .project-right {display: flex; flex-flow: row-reverse wrap;}
-.project-right img{float:right;}
+.project-right img{float:right; margin-right: 30px;}
 .project-right .contents{margin-right: 25px; margin-left:0; display: grid;}
 /* Project left */
 .project-left {display: flex; flex-flow: row wrap}
-.project-left img{float:left;}
-.project-left .contents{margin-left: 25px; margin-right: 0; display: grid;width:48%}
+.project-left img{float:left; margin-left: 30px;}
+.project-left .contents{margin-left: 25px; margin-right: 0; display: grid;}
 
-.contents-info {display:flex; flex-direction: row; align-items: flex-end;
+.contents-info {display:flex; flex-flow: row wrap; align-items: flex-end;
   justify-content: space-between; }
 
 @media only screen and (min-width:550px){

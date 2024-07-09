@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Taking the trash out"
+
+image: "/assets/img/takeTrash1.jpg"
+image_alt: "Visual novel with a character talking"
+
+description: "A short visual novel about a man with a troubled past and a cop stuck in a same-day loop, featuring a falling items minigame. Created during a 48-hour game jam."
+
+made: "Godot"
+time: "2 days"
+year: "2024"
+team: "4"
+---
+
+<div class="contents">
+  <h3> {{title}} </h3>
+  <p>A simple game, made for a university Computer Graphics discipline,where a character can walk and jump around the 'Cruz e Sousa' museum, with the objective of passing through the checkpoints on the map within a set time.</p>
+  <div class="contents-info">
+    <ul>
+      <li> Made In: Unity </li>
+      <li> Time Frame: 2 Weeks </li>
+    </ul>
+    <ul>
+      <li> Year: 2022 </li>
+      <li> Team Size: 2</li>
+    </ul>
+    <!-- <a class="project-link" href="{{ site.url }}/taking-the-trash-out.html">{{site.data[page.lang].btn_details}}</a> -->
+
+    {% assign project = site.personal_projects | where: "title", "Taking the Trash Out" | first %}
+    <p>{{ site.url }}{{ project.url }}</p>
+    <a href="{{ site.url }}{{ project.url }}">Taking the Trash Out</a>
+
+
+  </div>
+</div>

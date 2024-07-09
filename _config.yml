@@ -29,3 +29,8 @@ plugins:
 color_btn_hover: '#394b60'
 # #54516a
 # #1a222c
+
+
+collections:
+  projects_personal:
+    output: true

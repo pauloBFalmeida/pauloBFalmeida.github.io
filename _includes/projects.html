@@ -21,10 +21,40 @@
   <h1> {{site.data.[page.lang].projects_personal_title}} </h1>
 </div>
 
-<div class="user-projects project-left">
+<!-- <div class="user-projects project-left">
     {% include projects/personal/projMeowth.html %}
 </div>
 
 <div class="user-projects project-right">
     {% include projects/personal/projTrash.html %}
-</div>
+</div> -->
+
+{% for projects_personal in site.projects_personal %}
+  {% assign remainder = forloop.index0 | modulo: 2 %}
+  {%- if remainder == 0 -%}
+  <div class="user-projects project-right">
+  {%- else -%}
+  <div class="user-projects project-left">
+  {%- endif -%}
+
+    <img alt="{{projects_personal.image_alt}}" src="{{ "{{projects_personal.image}}" | prepend: site.baseurl }}" />
+    <div class="contents">
+      <h3> {{ projects_personal.title }} </h3>
+      <p> {{ projects_personal.description }} </p>
+      <div class="contents-info">
+        <ul>
+          <li> Made In: {{ projects_personal.made }} </li>
+          <li> Time Frame: {{ projects_personal.time }} </li>
+        </ul>
+        <ul>
+          <li> Year: {{ projects_personal.year }} </li>
+          <li> Team Size: {{ projects_personal.team }} </li>
+        </ul>
+        <a class="project-link" href="{{ site.url }}{{ project.url }}">{{site.data[page.lang].btn_details}}</a>
+
+        <p>{{ site.url }}/taking-the-trash-out.html</p>
+      </div>
+    </div>
+  </div>
+
+{% endfor %}
