@@ -34,3 +34,5 @@ color_btn_hover: '#394b60'
 collections:
   projects_personal:
     output: true
+  projects_professional:
+    output: true

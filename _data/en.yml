@@ -2,7 +2,6 @@ lang_tag: "en"
 lang_name: "English"
 # Top Menu
 menu_home: "Home"
-menu_about: "About"
 menu_galery: "Galery"
 menu_resume: "Resume"
 menu_contact: "Contact"

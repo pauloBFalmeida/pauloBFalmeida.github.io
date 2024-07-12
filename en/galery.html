@@ -9,4 +9,36 @@ lang: en
   <h1>This is the New Page</h1>
   <p>Welcome to the Galery page.</p>
 
+
+  {% for projects_personal in site.projects_personal %}
+    <!-- Do this so Professional work and personal are intercalated -->
+    {% assign sum_value = forloop.index0 | plus: remainder_prof %}
+    {% assign remainder_pers = sum_value | modulo: 2 %}
+    {%- if remainder_pers == 0 -%}
+      <div class="user-projects project-right">
+    {%- else -%}
+      <div class="user-projects project-left">
+    {%- endif -%}
+
+    <section id={{projects_personal.section}} </section>
+
+      <img alt="{{projects_personal.image_alt}}" src="{{ "{{projects_personal.image}}" | prepend: site.baseurl }}" />
+      <div class="contents">
+        <h3> {{ projects_personal.title }} </h3>
+        <p> {{ projects_personal.description }} </p>
+        <div class="contents-info">
+          <ul>
+            <li> Made In: {{ projects_personal.made }} </li>
+            <li> Time Frame: {{ projects_personal.time }} </li>
+          </ul>
+          <ul>
+            <li> Year: {{ projects_personal.year }} </li>
+            <li> Team Size: {{ projects_personal.team }} </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  {% endfor %}
+
 </div>

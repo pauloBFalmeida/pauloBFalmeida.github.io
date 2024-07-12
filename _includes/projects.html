@@ -1,40 +1,59 @@
 <!-- ====== Professional Projects ====== -->
 
-<!--
-{%- comment -%}
 
-<div class="user-details">
-  <h1> {{site.data.[page.lang].projects_professional_title}} </h1>
-</div>
+{% if site.projects_professional.size > 0 %}
+  <div class="user-details">
+    <h1> {{site.data.[page.lang].projects_professional_title}} </h1>
+  </div>
+{% endif %}
 
-<div class="user-projects project-right">
-    {% include projects/professional/proj.html %}
-</div>
 
-{%- endcomment -%}
--->
+{% for projects_professional in site.projects_professional %}
+  {% assign remainder_prof = forloop.index0 | modulo: 2 %}
+  {%- if remainder_prof == 0 -%}
+    <div class="user-projects project-left">
+  {%- else -%}
+    <div class="user-projects project-right">
+  {%- endif -%}
+
+    <img alt="{{projects_professional.image_alt}}" src="{{ "{{projects_professional.image}}" | prepend: site.baseurl }}" />
+    <div class="contents">
+      <h3> {{ projects_professional.title }} </h3>
+      <p> {{ projects_professional.description }} </p>
+      <div class="contents-info">
+        <ul>
+          <li> Made In: {{ projects_professional.made }} </li>
+          <li> Time Frame: {{ projects_professional.time }} </li>
+        </ul>
+        <ul>
+          <li> Year: {{ projects_professional.year }} </li>
+          <li> Team Size: {{ projects_professional.team }} </li>
+        </ul>
+        <a class="project-link" href="{{ site.url }}{{ projects_professional.permalink }}">{{site.data[page.lang].btn_details}}</a>
+      </div>
+    </div>
+  </div>
+
+{% endfor %}
+
 
 
 <!-- ====== Personal Projects ====== -->
 
-<div class="user-details">
-  <h1> {{site.data.[page.lang].projects_personal_title}} </h1>
-</div>
-
-<!-- <div class="user-projects project-left">
-    {% include projects/personal/projMeowth.html %}
-</div>
-
-<div class="user-projects project-right">
-    {% include projects/personal/projTrash.html %}
-</div> -->
+{% if site.projects_personal.size > 0 %}
+  <div class="user-details">
+    <h1> {{site.data.[page.lang].projects_personal_title}} </h1>
+  </div>
+{% endif %}
 
 {% for projects_personal in site.projects_personal %}
-  {% assign remainder = forloop.index0 | modulo: 2 %}
-  {%- if remainder == 0 -%}
-  <div class="user-projects project-right">
+  <!-- Do this so Professional work and personal are intercalated -->
+  {% assign sum_value = forloop.index0 | plus: remainder_prof %}
+  {% assign remainder_pers = sum_value | modulo: 2 %}
+  {%- if remainder_pers == 0 -%}
+    <div class="user-projects project-right">
   {%- else -%}
-  <div class="user-projects project-left">
+    <div class="user-projects project-left">
   {%- endif -%}
 
     <img alt="{{projects_personal.image_alt}}" src="{{ "{{projects_personal.image}}" | prepend: site.baseurl }}" />
@@ -50,7 +69,7 @@
           <li> Year: {{ projects_personal.year }} </li>
           <li> Team Size: {{ projects_personal.team }} </li>
         </ul>
-        <a class="project-link" href="{{ site.url }}{{ projects_personal.permalink }}">{{site.data[page.lang].btn_details}}</a>
+        <a class="project-link" href="{{ site.url }}/en/galery/{{ projects_personal.section }}">{{site.data[page.lang].btn_details}}</a>
       </div>
     </div>
   </div>
