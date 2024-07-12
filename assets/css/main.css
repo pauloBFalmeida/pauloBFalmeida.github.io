@@ -51,6 +51,22 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
 
 .contents-info {display:flex; flex-flow: row wrap; align-items: flex-end;
   justify-content: space-between; }
+/* Galery */
+.project-center {
+  display: flex; flex-flow: column wrap;
+  margin: auto; align-content: center;
+}
+.project-center p {
+  max-width: 70%;
+  margin: 20px auto;
+  font-size: 18px;
+}
+.galery img {
+  width: 70%; margin: auto;
+}
+.galery h3 {
+  font-size: 35px;
+}
 
 @media only screen and (min-width:550px){
   .contents{margin-left:0;width:48%;
