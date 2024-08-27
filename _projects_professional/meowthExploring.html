@@ -1,5 +1,6 @@
 ---
 layout: post
+lang: en
 permalink: /galery/tester/
 
 title: "Test testerson"
@@ -16,18 +17,20 @@ year: "2024"
 team: "1"
 ---
 
-<div class="contents">
-  <h3> Meowth Exploring Cruz e Sousa </h3>
-  <p>A simple game, made for a university Computer Graphics discipline,where a character can walk and jump around the 'Cruz e Sousa' museum, with the objective of passing through the checkpoints on the map within a set time.</p>
-  <div class="contents-info">
-    <ul>
-      <li> Made In: Unity </li>
-      <li> Time Frame: 2 Weeks </li>
-    </ul>
-    <ul>
-      <li> Year: 2022 </li>
-      <li> Team Size: 2</li>
-    </ul>
-    <a class="project-link" href="#">{{site.data[page.lang].btn_details}}</a>
+<div class="center">
+  <img alt="{{page.image_alt}}" src="{{ "{{page.image}}" | prepend: site.baseurl }}" />
+  <div class="contents center">
+    <h3> {{ page.title }} </h3>
+    <p> {{ page.description }} </p>
+    <div class="contents-info">
+      <ul>
+        <li> Made In: {{ page.made }} </li>
+        <li> Time Frame: {{ page.time }} </li>
+      </ul>
+      <ul>
+        <li> Year: {{ page.year }} </li>
+        <li> Team Size: {{ page.team }} </li>
+      </ul>
+    </div>
   </div>
 </div>

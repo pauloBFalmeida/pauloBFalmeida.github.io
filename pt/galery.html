@@ -1,12 +1,12 @@
 ---
 layout: pages
 title: Galery
-lang: en
+lang: pt
 ---
 
 <div class="center">
   <section id="algo"> </section>
-  <h1>Project Galery</h1>
+  <h1>Galeria de Projetos</h1>
 
   {% for projects_personal in site.projects_personal %}
     <div class="galery project-center">
@@ -19,15 +19,13 @@ lang: en
       <!-- </div> -->
     </div>
 
-
-
   {% endfor %}
 
 
   <!-- ====== Professional Projects ====== -->
 
   {% if site.projects_professional.size > 0 %}
-    <h2>Professional Projects</h2>
+    <h2>Projetos Professionais</h2>
   {% endif %}
 
   {% for projects_professional in site.projects_professional %}
