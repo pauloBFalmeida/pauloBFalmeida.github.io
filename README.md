@@ -6,6 +6,9 @@ Cloned theme from [Particle Theme in git](https://github.com/nrandecker/particle
 
 This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
 
+## Running locally
+`jekyll serve` to compile and start server on localhost
+
 # Adding a project
 
 Create a html file in
