@@ -68,6 +68,13 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
 .galery h3 {
   font-size: 35px;
 }
+.galery ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px; margin-right: 20px;
+  margin-top: 5px; margin-bottom: 5px;
+}
 
 @media only screen and (min-width:550px){
   .contents{margin-left:0;width:48%;
