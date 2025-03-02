@@ -20,6 +20,8 @@ see_resume:   "See my Resume"
 tools_engines:  "Engines"
 tools_code:     "Code"
 tools_other:    "Other"
+# Galery
+galery_title:   "Project Galery"
 # Projects
 projects_professional_title:  "Professional Work"
 projects_personal_title:      "Personal Projects"
