@@ -22,12 +22,17 @@
       <p> {{ projects_professional.description }} </p>
       <div class="contents-info">
         <ul>
-          <li> Made In: {{ projects_professional.made }} </li>
-          <li> Time Frame: {{ projects_professional.time }} </li>
+          <li> {{site.data[page.lang].projects_made_in}}: {{ projects_professional.made }} </li>
+          <li> {{site.data[page.lang].projects_time_frame}}:
+            {% if    page.lang == 'en' %}
+              {{ projects_professional.time_en }}
+            {% elsif page.lang == 'pt' %}
+              {{ projects_professional.time_pt }}
+            {% endif %} </li>
         </ul>
         <ul>
-          <li> Year: {{ projects_professional.year }} </li>
-          <li> Team Size: {{ projects_professional.team }} </li>
+          <li> {{site.data[page.lang].projects_year}}: {{ projects_professional.year }} </li>
+          <li> {{site.data[page.lang].projects_team_size}}: {{ projects_professional.team }} </li>
         </ul>
         <a class="project-link" href="{{ site.url }}{{ projects_professional.permalink }}">{{site.data[page.lang].btn_details}}</a>
       </div>
@@ -65,12 +70,17 @@
       <p> {{ projects_personal.description }} </p>
       <div class="contents-info">
         <ul>
-          <li> Made In: {{ projects_personal.made }} </li>
-          <li> Time Frame: {{ projects_personal.time }} </li>
+          <li> {{site.data[page.lang].projects_made_in}}: {{ projects_personal.made }} </li>
+          <li> {{site.data[page.lang].projects_time_frame}}:
+            {% if    page.lang == 'en' %}
+              {{ projects_personal.time_en }}
+            {% elsif page.lang == 'pt' %}
+              {{ projects_personal.time_pt }}
+            {% endif %} </li>
         </ul>
         <ul>
-          <li> Year: {{ projects_personal.year }} </li>
-          <li> Team Size: {{ projects_personal.team }} </li>
+          <li> {{site.data[page.lang].projects_year}}: {{ projects_personal.year }} </li>
+          <li> {{site.data[page.lang].projects_team_size}}: {{ projects_personal.team }} </li>
         </ul>
         <a class="project-link" href="{{ site.url }}/en/galery/{{ projects_personal.section }}">{{site.data[page.lang].btn_details}}</a>
       </div>

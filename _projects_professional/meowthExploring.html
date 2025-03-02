@@ -12,24 +12,30 @@ description: "A fast description for the test project, its text, and can't be to
 description_long: "long description"
 
 made: "Unity"
-time: "1 hour"
+time_en: "1 week"
+time_pt: "1 semana"
 year: "2024"
 team: "1"
 ---
 
 <div class="center">
-  <img alt="{{page.image_alt}}" src="{{ "{{page.image}}" | prepend: site.baseurl }}" />
+  <img alt="{{page.image_alt}}" src="{{ page.image | prepend: site.baseurl }}" />
   <div class="contents center">
     <h3> {{ page.title }} </h3>
     <p> {{ page.description }} </p>
     <div class="contents-info">
       <ul>
-        <li> Made In: {{ page.made }} </li>
-        <li> Time Frame: {{ page.time }} </li>
+        <li> {{site.data[page.lang].projects_made_in}}: {{ page.made }} </li>
+        <li> {{site.data[page.lang].projects_time_frame}}:
+          {% if page.lang == 'en' %}
+            {{ page.time_en }}
+          {% elsif page.lang == 'pt' %}
+            {{ page.time_pt }}
+          {% endif %} </li>
       </ul>
       <ul>
-        <li> Year: {{ page.year }} </li>
-        <li> Team Size: {{ page.team }} </li>
+        <li> {{site.data[page.lang].projects_year}}: {{ page.year }} </li>
+        <li> {{site.data[page.lang].projects_team_size}}: {{ page.team }} </li>
       </ul>
     </div>
   </div>
