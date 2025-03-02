@@ -55,13 +55,15 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
   .about-text img {width: 80%; margin: auto;}
 
   .galery ul {padding: 0;}
-  .galery li {margin-right: 5px;}
+  .galery li {margin-right: 20px;}
 }
 
 @media (min-width: 800px) {
   /* PC */
   .project-left .contents{margin-left: 25px; margin-right: 0; display: grid;}
   .project-right .contents{margin-right: 25px; margin-left:0; display: grid;}
+
+  .galery h3 { width: 70%; /* Same as the image */}
 }
 
 /* Project right */
@@ -91,7 +93,7 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
   width: 70%; margin: auto;
 }
 .galery h3 {
-  font-size: 35px;
+  font-size: 32px;
   margin-top: 20px; margin-bottom: 20px;
 }
 .galery ul {

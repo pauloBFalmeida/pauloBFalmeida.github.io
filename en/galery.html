@@ -6,7 +6,7 @@ permalink: /en/galery
 ---
 
 <div class="center">
-  <section id="algo"> </section>
+  <section id="galery"> </section>
   <h1>Project Galery</h1>
 
   <!-- ====== Professional Projects ====== -->
@@ -45,7 +45,7 @@ permalink: /en/galery
         <li> {{site.data[page.lang].projects_year}}: {{ projects_professional.year }} </li>
         <li> {{site.data[page.lang].projects_team_size}}: {{ projects_professional.team }} </li>
       </ul>
-      
+
       <!-- if there is an acess link, put it -->
       {% if projects_professional.access_link.size > 1 %}
         <a class="project-link" target="_blank" href="{{ projects_professional.access_link }}">{{projects_professional.access_link}}</a>
