@@ -1,2 +1,27 @@
-lang_tag: "pt"
-lang_name: "Português"
+lang_tag:   "pt"
+lang_name:  "Português"
+# Top Menu
+menu_home:    "Home"
+menu_galery:  "Galeria"
+menu_resume:  "Currículo"
+menu_contact: "Contato"
+menu_lang:    "Língua"
+# Header
+copy_email:   "Copiar e-mail"
+email_copied: "e-mail copiado!"
+visit_github: "Visite meu GitHub"
+visit_itch:   "Visite meu Itch.io"
+about_me:     "Sobre Mim"
+projects:     "Projetos"
+# Tools
+tools_engines:  "Engines"
+tools_code:     "Código"
+tools_other:    "Outros"
+# About me
+about_title:        "Sobre Mim"
+about_description:  "Pt Hi, I'm Paulo Almeida, a computer scientist graduating in game design. Welcome to my portfolio!<br>In my spare time, I enjoy gaming with friends and participating in GameJams."
+see_resume:         "Veja meu Currículo"
+# Projects
+projects_professional_title:  "Trabalho Profissional"
+projects_personal_title:      "Projetos Pessoais"
+btn_details:                  "Detalhes"

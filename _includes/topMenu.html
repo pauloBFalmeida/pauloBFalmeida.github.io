@@ -4,12 +4,16 @@
     <a href="{{site.url}}/{{site.data.[page.lang].lang_tag}}/resume">{{site.data.[page.lang].menu_resume}}</a>
     <a href="{{site.url}}/{{site.data.[page.lang].lang_tag}}/resume#contact">{{site.data.[page.lang].menu_contact}}</a>
     <div class="dropdown">
-      <button class="dropbtn">Language</button>
+      <button class="dropbtn">{{site.data.[page.lang].menu_lang}}</button>
       <div class="dropdown-content">
-       <a href="">
+        <a href="{{ site.baseurl }}/en{{ page.url | remove_first: '/pt' | remove_first: '/en' }}" {% if page.lang == 'en' %}class="active"{% endif %}>
+          {{site.data.["en"].lang_name}}</a>
+        <a href="{{ site.baseurl }}/pt{{ page.url | remove_first: '/pt' | remove_first: '/en' }}" {% if page.lang == 'pt' %}class="active"{% endif %}>
+          {{site.data.["pt"].lang_name}}</a>
+       <!-- <a href="">
          {{site.data.["en"].lang_name}}</a>
        <a href="{{site.url}}/pt/">
-         {{site.data.["pt"].lang_name}}</a>
+         {{site.data.["pt"].lang_name}}</a> -->
       </div>
     </div>
 </div>

@@ -1,26 +1,37 @@
 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 <div class="user">
     <div class="tech">
-      <h2>Engines</h2>
+      <h2>{{site.data.[page.lang].tools_engines}}</h2>
       <i class="devicon-unity-plain colored"></i>
-      <!-- <i class="devicon-unity-plain-wordmark colored"></i> -->
       <i class="devicon-renpy-plain"></i>
       <i class="devicon-godot-plain-wordmark colored"></i>
-      <p>Experienced in game development using Unity, Godot and Renpy, utilizing C#, GDScript and Pytohn for gameplay mechanics. Adept at implementing game assets, debugging and optimizing.</p>
+      {% if page.lang == 'en' %}
+      <p>With practice in game development using Unity, Godot and Renpy, utilizing C#, GDScript and Pytohn for gameplay mechanics. Adept at implementing game assets, debugging and optimizing.</p>
+      {% elsif page.lang == 'pt' %}
+      <p>Com prática em desenvolvimento de jogos usando Unity, Godot e Renpy, utilizando C#, GDScript e Python para mecânicas de gameplay. Habilidade em implementar assets de jogos, depuração e otimização.</p>
+      {% endif %}
     </div>
     <div class="tech">
-      <h2>Code</h2>
+      <h2>{{site.data.[page.lang].tools_code}}</h2>
       <i class="devicon-csharp-plain colored"></i>
       <i class="devicon-cplusplus-plain colored"></i>
       <i class="devicon-python-plain-wordmark"></i>
       <!-- <i class="devicon-java-plain-wordmark colored"></i> -->
-      <p>Capable in C#, C++, and Python, adept at writing clean, well-commented code and able to implement complex algorithms. Familiar with various other popular programming languages.</p>
+      {% if page.lang == 'en' %}
+      <p>Proficient in C#, C++, and Python, adept at writing clean, well-commented code and able to implement complex algorithms. Familiar with various other popular programming languages.</p>
+      {% elsif page.lang == 'pt' %}
+      <p>Proficiente em C#, C++ e Python, adepto em escrever código limpo e bem comentado, e capaz de implementar algoritmos complexos. Familiarizado com várias outras linguagens de programação populares.</p>
+      {% endif %}
     </div>
     <div class="tech">
-      <h2>Other</h2>
+      <h2>{{site.data.[page.lang].tools_other}}</h2>
       <i class="devicon-github-original colored"></i>
       <i class="devicon-blender-original colored"></i>
       <i class="devicon-arduino-plain-wordmark"></i>
-      <p>Experienced with GitHub for version control, Blender for 3D modeling and animation, and Arduino for hardware projects. Familiar with a variety of software and tools for project development.</p>
+      {% if page.lang == 'en' %}
+      <p>Familiar with GitHub for version control, Blender for 3D modeling and animation, and Arduino for hardware projects. Comfortable with a variety of software and tools for project development.</p>
+      {% elsif page.lang == 'pt' %}
+      <p>Familiarizado com GitHub para controle de versão, Blender para modelagem e animação 3D, e Arduino para projetos de hardware. Confortável com uma variedade de softwares e ferramentas para desenvolvimento de projetos.</p>
+      {% endif %}
     </div>
 </div>
