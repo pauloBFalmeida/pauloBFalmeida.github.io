@@ -31,20 +31,40 @@
   margin: auto;
 }
 
-.interests {
-  max-width: 60%;
-  text-align: justify;
-  margin: auto;
-  font-size: 17px;
+@media (max-width: 799px) {
+  /* On mobile */
+  .interests {
+    max-width: 100%;
+    text-align: justify;
+    margin: auto;
+    font-size: 17px;
+  }
+  .contact-h1 {
+    font-size: 30px;
+  }
+  .contact-item{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 800px) {
+  /* PC */
+  .interests {
+    max-width: 60%;
+    text-align: justify;
+    margin: auto;
+    font-size: 17px;
+  }
+  .contact-item{
+    font-size: 20px;
+  }
 }
 
 .contact-info{
   width: fit-content;
   margin: auto;
 }
-.contact-item{
-  font-size: 20px;
-}
+
 .contact-li{
   display: flex;
   flex-flow: row wrap;
