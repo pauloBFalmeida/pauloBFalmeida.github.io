@@ -9,12 +9,14 @@ This theme is free and open source software, distributed under the The MIT Licen
 # Adding a project
 
 Create a html file in
-/_projects_professional/ for professional work
-/_projects_personal/ for personal projects
 
+`/_projects_professional/` for professional work
+
+`/_projects_personal/` for personal projects
+```
 ---
 layout: post
-section: "html scetion name, cant be repeated"
+section: "html section name, cant be repeated"
 
 title_en: "Title En"
 title_pt: "Title Pt"
@@ -37,6 +39,10 @@ team: "3"
 
 access_link: "https:// link"
 ---
+```
 
-add the image in /assets/img/
+add the image in `/assets/img/`
+
 image width needs to be 512px, whatever height
+
+After that the jekyll will add automagically to the home-page and galery :)
