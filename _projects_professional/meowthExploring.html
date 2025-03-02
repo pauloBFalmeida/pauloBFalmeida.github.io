@@ -23,26 +23,3 @@ team: "1"
 
 access_link: "https://os-cubanos-studio.itch.io/frias-foradas"
 ---
-
-<div class="center">
-  <img alt="{{page.image_alt}}" src="{{ page.image | prepend: site.baseurl }}" />
-  <div class="contents center">
-    <h3> {{ page.title }} </h3>
-    <p> {{ page.description }} </p>
-    <div class="contents-info">
-      <ul>
-        <li> {{site.data[page.lang].projects_made_in}}: {{ page.made }} </li>
-        <li> {{site.data[page.lang].projects_time_frame}}:
-          {% if page.lang == 'en' %}
-            {{ page.time_en }}
-          {% elsif page.lang == 'pt' %}
-            {{ page.time_pt }}
-          {% endif %} </li>
-      </ul>
-      <ul>
-        <li> {{site.data[page.lang].projects_year}}: {{ page.year }} </li>
-        <li> {{site.data[page.lang].projects_team_size}}: {{ page.team }} </li>
-      </ul>
-    </div>
-  </div>
-</div>

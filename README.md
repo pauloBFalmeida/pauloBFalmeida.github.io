@@ -1,71 +1,42 @@
 # Particle Jekyll Theme
 
-![](./particle.jpg)
-
-This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
-
-The Theme features:
-
-- Gulp
-- SASS
-- Sweet Scroll
-- Particle.js
-- BrowserSync
-- Font Awesome and Devicon icons
-- Google Analytics
-- Info Customization
-
-## Basic Setup
-
-1. [Install Jekyll](http://jekyllrb.com)
-2. Clone the particle theme: `git clone https://github.com/nrandecker/particle.git`
-3. Edit `_config.yml` to personalize your site.
-
-## Site and User Settings
-
-You have to fill some informations on `_config.yml` to customize your site.
-
-```
-# Site settings
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:3000" # the base hostname & protocol for your site
-
-# User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-```
-
-**Don't forget to change your url before you deploy your site!**
-
-## Color and Particle Customization
-- Color Customization
-  - Edit the sass variables
-- Particle Customization
-  - Edit the json data in particle function in app.js
-  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
-
-## Running the blog in local
-
-In order to compile the assets and run Jekyll on local you need to follow those steps:
-
-- Install [NodeJS](https://nodejs.org/)
-- Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
-- Install [Yarn](https://yarnpkg.com/): `npm install -g yarn`
-- Install dependencies: `yarn`
-- Run: `gulp`
+Cloned theme from [Particle Theme in git](https://github.com/nrandecker/particle.git)
 
 ## License
 
 This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
 
-## Credits
+# Adding a project
 
-This theme was partially designed with the inspiration from these fine folks
-- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
-- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
+Create a html file in
+/_projects_professional/ for professional work
+/_projects_personal/ for personal projects
+
+---
+layout: post
+section: "html scetion name, cant be repeated"
+
+title_en: "Title En"
+title_pt: "Title Pt"
+title_long_en: "Longer Title En"
+title_long_pt: "Longer Title Pt"
+
+image: "/assets/img/image_name.jpg"
+image_alt: "alt description image"
+
+description_en: "A fast description for the test project, its text, and can't be too short. In en"
+description_pt: "A fast description for the test project, its text, and can't be too short. In pt"
+description_long_en: "long description in en"
+description_long_pt: "long description in pt"
+
+made: "Unity"
+time_en: "1 week"
+time_pt: "1 semana"
+year: "2024"
+team: "3"
+
+access_link: "https:// link"
+---
+
+add the image in /assets/img/
+image width needs to be 512px, whatever height
