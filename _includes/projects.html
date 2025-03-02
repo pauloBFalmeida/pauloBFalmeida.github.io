@@ -26,7 +26,7 @@
         <p> {{ projects_professional.description_pt }} </p>
       {% endif %}
       <div class="contents-info">
-        <ul>
+        <ul class="contents-info-1">
           <li> {{site.data[page.lang].projects_made_in}}: {{ projects_professional.made }} </li>
           <li> {{site.data[page.lang].projects_time_frame}}:
             {% if    page.lang == 'en' %}
@@ -35,7 +35,7 @@
               {{ projects_professional.time_pt }}
             {% endif %} </li>
         </ul>
-        <ul>
+        <ul class="contents-info-2">
           <li> {{site.data[page.lang].projects_year}}: {{ projects_professional.year }} </li>
           <li> {{site.data[page.lang].projects_team_size}}: {{ projects_professional.team }} </li>
         </ul>
@@ -79,7 +79,7 @@
         <p> {{ projects_personal.description_pt }} </p>
       {% endif %}
       <div class="contents-info">
-        <ul>
+        <ul class="contents-info-1">
           <li> {{site.data[page.lang].projects_made_in}}: {{ projects_personal.made }} </li>
           <li> {{site.data[page.lang].projects_time_frame}}:
             {% if    page.lang == 'en' %}
@@ -88,7 +88,7 @@
               {{ projects_personal.time_pt }}
             {% endif %} </li>
         </ul>
-        <ul>
+        <ul class="contents-info-2">
           <li> {{site.data[page.lang].projects_year}}: {{ projects_personal.year }} </li>
           <li> {{site.data[page.lang].projects_team_size}}: {{ projects_personal.team }} </li>
         </ul>
