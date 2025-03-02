@@ -9,38 +9,64 @@ permalink: /pt/galery
   <section id="algo"> </section>
   <h1>Galeria de Projetos</h1>
 
-  {% for projects_personal in site.projects_personal %}
-    <div class="galery project-center">
-      <section id={{projects_personal.section}}> </section>
-      <h3> {{ projects_personal.title_long}} </h3>
-
-      <img alt="{{projects_personal.image_alt}}" src="{{ projects_personal.image | prepend: site.baseurl }}" />
-      <!-- <div class="contents"> -->
-        <p> {{ projects_personal.description_long }} </p>
-      <!-- </div> -->
-    </div>
-
-  {% endfor %}
-
-
   <!-- ====== Professional Projects ====== -->
 
   {% if site.projects_professional.size > 0 %}
-    <h2>Projetos Professionais</h2>
+    <h2>Projetos Profissionais</h2>
   {% endif %}
 
   {% for projects_professional in site.projects_professional %}
 
     <div class="galery project-center">
       <section id={{projects_professional.section}}> </section>
-      <h3> {{ projects_professional.title_long}} </h3>
+      {% if    page.lang == 'en' %}
+        <h3> {{ projects_professional.title_long_en}} </h3>
+      {% elsif page.lang == 'pt' %}
+        <h3> {{ projects_professional.title_long_pt}} </h3>
+      {% endif %}
 
       <img alt="{{projects_professional.image_alt}}" src="{{ projects_professional.image | prepend: site.baseurl }}" />
-      <p> {{ projects_professional.description_long }} </p>
-      <a class="project-link" href="{{ site.url }}{{ projects_professional.permalink }}">{{site.data[page.lang].btn_details}}</a>
-    </div>
+      <!-- Project description long -->
+      {% if    page.lang == 'en' %}
+        <p> {{ projects_professional.description_long_en }} </p>
+      {% elsif page.lang == 'pt' %}
+        <p> {{ projects_professional.description_long_pt }} </p>
+      {% endif %}
+      <!-- if there is an acess link, put it -->
+      {% if projects_professional.access_link.size > 1 %}
+        <a class="project-link" target="_blank" href="{{ projects_professional.access_link }}">{{projects_professional.access_link}}</a>
+      {% endif %}
+  </div>
 
   {% endfor %}
 
+  <!-- ====== Personal Projects ====== -->
+  {% if site.projects_professional.size > 0 %}
+    <h2>Projetos Pessoais</h2>
+  {% endif %}
+
+  {% for projects_personal in site.projects_personal %}
+    <div class="galery project-center">
+      <section id={{projects_personal.section}}> </section>
+      {% if    page.lang == 'en' %}
+        <h3> {{ projects_personal.title_long_en}} </h3>
+      {% elsif page.lang == 'pt' %}
+        <h3> {{ projects_personal.title_long_pt}} </h3>
+      {% endif %}
+
+      <img alt="{{projects_personal.image_alt}}" src="{{ projects_personal.image | prepend: site.baseurl }}" />
+      <!-- Project description long -->
+      {% if    page.lang == 'en' %}
+        <p> {{ projects_personal.description_long_en }} </p>
+      {% elsif page.lang == 'pt' %}
+        <p> {{ projects_personal.description_long_pt }} </p>
+      {% endif %}
+      <!-- if there is an acess link, put it -->
+      {% if projects_personal.access_link.size > 1 %}
+        <a class="project-link" target="_blank" href="{{ projects_personal.access_link }}">{{projects_personal.access_link}}</a>
+      {% endif %}
+    </div>
+
+  {% endfor %}
 
 </div>

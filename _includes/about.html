@@ -6,7 +6,11 @@
   <div class="about-text" align="vertical">
     <img alt="Image of myself in a park" src="{{ "/assets/img/photo_myself.jpeg" | prepend: site.baseurl }}" />
     <div>
-      <p> {{site.data[page.lang].about_description}} </p>
+      {% if page.lang == 'en' %}
+      <p>Hi, I'm Paulo Almeida, a computer scientist graduating in game design.<br>Welcome to my portfolio!<br>In my spare time, I enjoy gaming with friends and participating in GameJams.</p>
+      {% elsif page.lang == 'pt' %}
+      <p>Olá, eu sou Paulo Almeida, um cientista da computação fazendo graduação em design de jogos.<br>Bem-vindo ao meu portfólio!<br>No meu tempo livre, gosto de jogar com amigos e participar de GameJams.</p>
+      {% endif %}
       <button class="project-link resume-btn" onclick="location.href='{{ site.baseurl }}/en/resume.html';">{{site.data[page.lang].see_resume}}</button>
     </div>
   </div>

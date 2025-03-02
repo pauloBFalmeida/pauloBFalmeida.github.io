@@ -13,14 +13,13 @@ visit_github: "Visite meu GitHub"
 visit_itch:   "Visite meu Itch.io"
 about_me:     "Sobre Mim"
 projects:     "Projetos"
+# About me
+about_title:  "Sobre Mim"
+see_resume:   "Veja meu Currículo"
 # Tools
 tools_engines:  "Engines"
 tools_code:     "Código"
 tools_other:    "Outros"
-# About me
-about_title:        "Sobre Mim"
-about_description:  "Pt Hi, I'm Paulo Almeida, a computer scientist graduating in game design. Welcome to my portfolio!<br>In my spare time, I enjoy gaming with friends and participating in GameJams."
-see_resume:         "Veja meu Currículo"
 # Projects
 projects_professional_title:  "Trabalho Profissional"
 projects_personal_title:      "Projetos Pessoais"
