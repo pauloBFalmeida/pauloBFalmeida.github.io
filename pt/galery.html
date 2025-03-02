@@ -14,7 +14,7 @@ permalink: /pt/galery
       <section id={{projects_personal.section}}> </section>
       <h3> {{ projects_personal.title_long}} </h3>
 
-      <img alt="{{projects_personal.image_alt}}" src="{{ "{{projects_personal.image}}" | prepend: site.baseurl }}" />
+      <img alt="{{projects_personal.image_alt}}" src="{{ projects_personal.image | prepend: site.baseurl }}" />
       <!-- <div class="contents"> -->
         <p> {{ projects_personal.description_long }} </p>
       <!-- </div> -->
@@ -35,7 +35,7 @@ permalink: /pt/galery
       <section id={{projects_professional.section}}> </section>
       <h3> {{ projects_professional.title_long}} </h3>
 
-      <img alt="{{projects_professional.image_alt}}" src="{{ "{{projects_professional.image}}" | prepend: site.baseurl }}" />
+      <img alt="{{projects_professional.image_alt}}" src="{{ projects_professional.image | prepend: site.baseurl }}" />
       <p> {{ projects_professional.description_long }} </p>
       <a class="project-link" href="{{ site.url }}{{ projects_professional.permalink }}">{{site.data[page.lang].btn_details}}</a>
     </div>

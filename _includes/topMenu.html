@@ -1,15 +1,15 @@
 <div class="topMenu">
-    <a href="{{site.url}}/{{site.data.[page.lang].lang_tag}}/#home"> {{site.data.[page.lang].menu_home}}</a>
-    <a href="{{site.url}}/{{site.data.[page.lang].lang_tag}}/galery">{{site.data.[page.lang].menu_galery}}</a>
-    <a href="{{site.url}}/{{site.data.[page.lang].lang_tag}}/resume">{{site.data.[page.lang].menu_resume}}</a>
-    <a href="{{site.url}}/{{site.data.[page.lang].lang_tag}}/resume#contact">{{site.data.[page.lang].menu_contact}}</a>
+    <a href="{{site.url}}/{{site.data[page.lang].lang_tag}}/#home"> {{site.data[page.lang].menu_home}}</a>
+    <a href="{{site.url}}/{{site.data[page.lang].lang_tag}}/galery">{{site.data[page.lang].menu_galery}}</a>
+    <a href="{{site.url}}/{{site.data[page.lang].lang_tag}}/resume">{{site.data[page.lang].menu_resume}}</a>
+    <a href="{{site.url}}/{{site.data[page.lang].lang_tag}}/resume#contact">{{site.data[page.lang].menu_contact}}</a>
     <div class="dropdown">
-      <button class="dropbtn">{{site.data.[page.lang].menu_lang}}</button>
+      <button class="dropbtn">{{site.data[page.lang].menu_lang}}</button>
       <div class="dropdown-content">
         <a href="{{ site.baseurl }}{{ page.url | replace_first: page.lang, 'en' }}">
-          {{site.data.["en"].lang_name}}</a>
+          {{site.data["en"].lang_name}}</a>
         <a href="{{ site.baseurl }}{{ page.url | replace_first: page.lang, 'pt' }}">
-          {{site.data.["pt"].lang_name}}</a>
+          {{site.data["pt"].lang_name}}</a>
       </div>
     </div>
 </div>

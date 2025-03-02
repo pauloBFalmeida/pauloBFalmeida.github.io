@@ -3,7 +3,7 @@
       <h1>
         <span class="site-title">{{site.username}}</span>
         <span class="site-description">{{ site.user_title }}</span>
-        <!-- <p>lang:{{page.lang}} copy:{{site.data.[page.lang].copy_email}} :</p> -->
+        <!-- <p>lang:{{page.lang}} copy:{{site.data[page.lang].copy_email}} :</p> -->
       </h1>
       <div class="header-icons">
         <!-- Email -->
@@ -11,28 +11,28 @@
           <a id="emailIcon" aria-label="My e-mail">
             <i class="icon fa fa-envelope"></i>
           </a>
-          <span id="emailText">{{site.data.[page.lang].copy_email}}</span>
+          <span id="emailText">{{site.data[page.lang].copy_email}}</span>
         </div>
         <!-- Github -->
         <div align="center">
           <a id="githubIcon" aria-label="My Github" target="_blank" href="{{site.github_link}}">
             <i class="icon fa fa-github-alt" aria-hidden="true"></i>
           </a>
-          <span id="githubText">{{site.data.[page.lang].visit_github}}</span>
+          <span id="githubText">{{site.data[page.lang].visit_github}}</span>
         </div>
         <!-- Itch io -->
         <div align="center">
           <a id="itchIcon" aria-label="My Itch.io" target="_blank" href="{{site.itch_link}}">
             <i class="icon fa fa-gamepad" aria-hidden="true"></i>
           </a>
-          <span id="itchText">{{site.data.[page.lang].visit_itch}}</span>
+          <span id="itchText">{{site.data[page.lang].visit_itch}}</span>
         </div>
         <!-- <a aria-label="My Twitter" target="_blank" href="#"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
         <a aria-label="My Google Plus" target="_blank" href="#"><i class="icon fa fa-google-plus" aria-hidden="true"></i></a> -->
       </div>
       <div class="header-links">
-        <a class="link" href="#about" data-scroll>{{site.data.[page.lang].about_me}}</a>
-        <a class="link" href="#projects" data-scroll>{{site.data.[page.lang].projects}}</a>
+        <a class="link" href="#about" data-scroll>{{site.data[page.lang].about_me}}</a>
+        <a class="link" href="#projects" data-scroll>{{site.data[page.lang].projects}}</a>
       </div>
   </div>
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -45,7 +45,7 @@
         navigator.clipboard.writeText(text) // Copy text to clipboard
             .then(function() {
                 console.log('Email copied to clipboard');
-                document.getElementById('emailText').textContent = '{{site.data.[page.lang].email_copied}}';
+                document.getElementById('emailText').textContent = '{{site.data[page.lang].email_copied}}';
             })
             .catch(function(err) {
                 console.error('Failed to copy text: ', err);
@@ -53,6 +53,6 @@
     });
     // change text from email after click
     document.getElementById('emailIcon').addEventListener('mouseout', function() {
-        document.getElementById('emailText').textContent = '{{site.data.[page.lang].copy_email}}';
+        document.getElementById('emailText').textContent = '{{site.data[page.lang].copy_email}}';
     });
 </script>

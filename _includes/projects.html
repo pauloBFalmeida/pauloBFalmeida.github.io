@@ -1,12 +1,14 @@
 <!-- ====== Professional Projects ====== -->
 
 {% if site.projects_professional.size > 0 %}
+  <!-- If exists professional projects, add the tittle -->
   <div class="user-details">
-    <h1> {{site.data.[page.lang].projects_professional_title}} </h1>
+    <h1> {{site.data[page.lang].projects_professional_title}} </h1>
   </div>
 {% endif %}
 
 {% for projects_professional in site.projects_professional %}
+  <!-- Alternate from left to right div class -->
   {% assign remainder_prof = forloop.index0 | modulo: 2 %}
   {%- if remainder_prof == 0 -%}
     <div class="user-projects project-left">
@@ -38,15 +40,19 @@
 <!-- ====== Personal Projects ====== -->
 
 {% if site.projects_personal.size > 0 %}
+  <!-- If exists personal projects, add the tittle -->
   <div class="user-details">
-    <h1> {{site.data.[page.lang].projects_personal_title}} </h1>
+    <h1> {{site.data[page.lang].projects_personal_title}} </h1>
   </div>
 {% endif %}
 
 {% for projects_personal in site.projects_personal %}
-  <!-- Do this so Professional work and personal are intercalated -->
+  <!-- Do this so Professional and Personal projects are intercalated
+        Profes. ended on left, personal start on right
+        Profes. ended on right, personal start on left -->
   {% assign sum_value = forloop.index0 | plus: remainder_prof %}
   {% assign remainder_pers = sum_value | modulo: 2 %}
+  <!-- Alternate from right to left div class -->
   {%- if remainder_pers == 0 -%}
     <div class="user-projects project-right">
   {%- else -%}
