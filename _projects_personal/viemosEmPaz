@@ -1,0 +1,25 @@
+---
+layout: post
+section: "viemosEmPaz"
+
+title_en: "We come in peace"
+title_pt: "Viemos em Paz"
+title_long_en: "We come in peace"
+title_long_pt: "Viemos em Paz"
+
+image: "/assets/img/viemosPaz.jpg"
+image_alt: "Game scene with a space truck abducting an alien"
+
+description_en: "A 3D game using 2D visuals, where you control a space truck on a mission to abduct specific aliens within a time limit. Originally created during a Game Jam, later expanded into a full version with multiple levels."
+description_pt: "Jogo 3D com imagens 2D, onde você controla um caminhão espacial na missão de abduzir aliens especificos dentro do tempo. Começou como um jogo de GameJam, e foi expandido para uma versão com múltiplos níveis."
+description_long_en: "3D game with 2D visual elements in which the player assumes the role of a space trucker assigned to collect specific aliens from the surface of a distant planet. The gameplay involves navigating open terrain and gathering both targeted aliens and special items within a set time limit. Initially developed during a Game Jam, the game was later expanded into a more complete version featuring multiple levels and refined mechanics."
+description_long_pt: "Jogo 3D com elementos visuais em 2D, no qual o jogador assume o papel de um caminhoneiro espacial encarregado de coletar alienígenas específicos na superfície de um planeta distante. O jogo envolve navegar por terrenos abertos e coletar tanto os alienígenas-alvo quanto itens especiais dentro de um limite de tempo. Inicialmente desenvolvido durante uma Game Jam, o jogo foi posteriormente expandido para uma versão mais completa, com múltiplos níveis e mecânicas refinadas."
+
+made: "Godot"
+time_en: "2 weeks"
+time_pt: "2 semanas"
+year: "2025"
+team: "3"
+
+access_link: "https://paulobfalmeida.itch.io/viemos-em-paz-fullversion"
+---
