@@ -194,9 +194,9 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
     visibility: visible;
   }
   #githubText {
-    visibility: hidden; /* Hide the text initially */
+    visibility: visible;
   }
   #itchText {
-    visibility: hidden; /* Hide the text initially */
+    visibility: visible;
   }
 }
