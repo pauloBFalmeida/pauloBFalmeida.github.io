@@ -187,3 +187,16 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
 #itchIcon:hover + #itchText {
   visibility: visible; /* Show the text when hovering over the GitHub icon */
 }
+
+/* Show text on small screens (mobile) */
+@media (max-width: 799px) {
+  #emailText {
+    visibility: visible;
+  }
+  #githubText {
+    visibility: hidden; /* Hide the text initially */
+  }
+  #itchText {
+    visibility: hidden; /* Hide the text initially */
+  }
+}
