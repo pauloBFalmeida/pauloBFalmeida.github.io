@@ -20,6 +20,7 @@ Create a html file in
 ---
 layout: post
 section: "html section name, cant be repeated"
+order: 1
 
 title_en: "Title En"
 title_pt: "Title Pt"

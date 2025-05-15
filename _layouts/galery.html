@@ -20,7 +20,8 @@
           {% endif %}
 
           <!-- Loop trough projects -->
-          {% for projects_professional in site.projects_professional %}
+          {% assign sorted_projects_professional = site.projects_professional | sort: "order" %}
+          {% for projects_professional in sorted_projects_professional %}
             <div class="galery project-center">
               <section id="{{ projects_professional.section }}"></section>
               <!-- Project title -->
@@ -68,7 +69,8 @@
           {% endif %}
 
           <!-- Loop trough projects -->
-          {% for projects_personal in site.projects_personal %}
+          {% assign sorted_projects_personal = site.projects_personal | sort: "order" %}
+          {% for projects_personal in sorted_projects_personal %}
             <div class="galery project-center">
               <section id={{projects_personal.section}}> </section>
               <!-- Project title -->

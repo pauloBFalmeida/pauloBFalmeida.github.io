@@ -7,7 +7,8 @@
   </div>
 {% endif %}
 
-{% for projects_professional in site.projects_professional %}
+{% assign sorted_projects_professional = site.projects_professional | sort: "order" %}
+{% for projects_professional in sorted_projects_professional %}
   <!-- Alternate from left to right div class -->
   {% assign remainder_prof = forloop.index0 | modulo: 2 %}
   {%- if remainder_prof == 0 -%}
@@ -56,7 +57,8 @@
   </div>
 {% endif %}
 
-{% for projects_personal in site.projects_personal %}
+{% assign sorted_projects_personal = site.projects_personal | sort: "order" %}
+{% for projects_personal in sorted_projects_personal %}
   <!-- Do this so Professional and Personal projects are intercalated
         Profes. ended on left, personal start on right
         Profes. ended on right, personal start on left -->
