@@ -129,6 +129,7 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
 .project-link:active,
 .project-link:hover{background-color:#54516a;border-color:#54516a;color:#fff;transition:color .3s ease-in,background-color .3s ease-in,border-color .3s ease-in}
 
+.center-btn {margin: auto;  padding: 10px 20px; width: auto; /* fit the text */ text-align: center; }
 
 .footer{background:#1a222c;padding:10px 0;margin-top:50px;text-align:center;color:#fff}
 .footer p{margin:8px;}
