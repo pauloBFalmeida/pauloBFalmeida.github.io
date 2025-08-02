@@ -8,7 +8,7 @@
 {% endif %}
 
 {% assign sorted_projects_professional = site.projects_professional | sort: "order" %}
-{% for projects_professional in sorted_projects_professional %}
+{% for projects_professional in sorted_projects_professional limit: display_max_professional %}
   <!-- Alternate from left to right div class -->
   {% assign remainder_prof = forloop.index0 | modulo: 2 %}
   {%- if remainder_prof == 0 -%}
@@ -58,7 +58,7 @@
 {% endif %}
 
 {% assign sorted_projects_personal = site.projects_personal | sort: "order" %}
-{% for projects_personal in sorted_projects_personal %}
+{% for projects_personal in sorted_projects_personal limit: display_max_personal %}
   <!-- Do this so Professional and Personal projects are intercalated
         Profes. ended on left, personal start on right
         Profes. ended on right, personal start on left -->
@@ -98,5 +98,10 @@
       </div>
     </div>
   </div>
+
+  <!-- 'Go to Gallery' button on the end of the projects list -->
+  <button class="project-link resume-btn" onclick="location.href='{{site.url}}/{{site.data[page.lang].lang_tag}}/gallery';">
+    {{site.data[page.lang].gallery_button}}
+  </button>
 
 {% endfor %}

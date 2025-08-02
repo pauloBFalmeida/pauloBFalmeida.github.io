@@ -17,6 +17,22 @@ cv_link: http://lattes.cnpq.br/8271715880695926
 lang: en
 languages: ["en", "pt"]
 
+# --- Projects settings ---
+# maximum amount of projects to display on home page
+display_max_personal: 4
+display_max_professional: 3
+
+collections:
+  projects_personal:
+    output: true
+  projects_professional:
+    output: true
+
+# --- Colors ---
+color_btn_hover: '#394b60'
+# #54516a
+# #1a222c
+
 # Google-analytics
 google-analytics:
   id: ""
@@ -25,15 +41,3 @@ exclude: ['package.json', 'src' , 'node_modules']
 
 plugins:
   - jekyll-seo-tag
-
-# Colors
-color_btn_hover: '#394b60'
-# #54516a
-# #1a222c
-
-
-collections:
-  projects_personal:
-    output: true
-  projects_professional:
-    output: true

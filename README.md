@@ -49,4 +49,6 @@ add the image in `/assets/img/`
 
 image width needs to be 512px, whatever height
 
+smaller index numbers appear at the top of the page (first)
+
 After that the jekyll will add automagically to the home-page and gallery :)
