@@ -2,9 +2,9 @@
 title: Paulo BF Almeida
 description: Portifólio do Paulo
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-url: https://paulobfalmeida.github.io # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: https://paulobfalmeida.github.io # the base hostname & protocol for your site
 
-# User settings
+# --- User settings ---
 username: Paulo B F Almeida
 user_title: Game Designer
 email: paulobfalmeida@gmail.com

@@ -2,7 +2,7 @@ lang_tag:   "pt"
 lang_name:  "Português"
 # Top Menu
 menu_home:    "Home"
-menu_galery:  "Galeria"
+menu_gallery:  "Galeria"
 menu_resume:  "Currículo"
 menu_contact: "Contato"
 menu_lang:    "Língua"
@@ -20,8 +20,9 @@ see_resume:   "Veja meu Currículo"
 tools_engines:  "Engines"
 tools_code:     "Código"
 tools_other:    "Outros"
-# Galery
-galery_title:   "Galeria de Projetos"
+# Gallery
+gallery_title:   "Galeria de Projetos"
+gallery_button:  "Continue na Galeria"
 # Projects
 projects_professional_title:  "Trabalho Profissional"
 projects_personal_title:      "Projetos Pessoais"

@@ -39,7 +39,7 @@
   margin: auto;
 }
 
-.galery-section {
+.gallery-section {
   font-size: 32px;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -75,7 +75,7 @@
   .contact-item{
     font-size: 20px;
   }
-  .galery-section {
+  .gallery-section {
     width: 70%; /* Same as img */
     margin: auto;
   }

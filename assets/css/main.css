@@ -58,8 +58,8 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
 
   .about-text img {width: 80%; margin: auto;}
 
-  .galery ul {padding: 0;}
-  .galery li {margin-right: 20px;}
+  .gallery ul {padding: 0;}
+  .gallery li {margin-right: 20px;}
 
   .header .site-title{max-width: 90%; }
 }
@@ -69,7 +69,7 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
   .project-left .contents{margin-left: 25px; margin-right: 0; display: grid;}
   .project-right .contents{margin-right: 25px; margin-left:0; display: grid;}
 
-  .galery h3 { width: 70%; /* Same as the image */}
+  .gallery h3 { width: 70%; /* Same as the image */}
 }
 
 /* Project right */
@@ -85,7 +85,7 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
 .contents-info-1 { padding-left: 15px; }
 .contents-info-2 { padding-left: 20px; /*padding-right: 40px;*/ }
 
-/* Galery */
+/* Gallery */
 .project-center {
   display: flex; flex-flow: column wrap;
   margin: auto; align-content: center;
@@ -95,14 +95,14 @@ color:#fff;position:absolute;top:50%;left:50%;margin:0 auto;-webkit-transform:tr
   margin: 20px auto;
   font-size: 18px;
 }
-.galery img {
+.gallery img {
   width: 70%; margin: auto;
 }
-.galery h3 {
+.gallery h3 {
   font-size: 32px;
   margin-top: 20px; margin-bottom: 20px;
 }
-.galery ul {
+.gallery ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

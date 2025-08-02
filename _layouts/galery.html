@@ -9,20 +9,20 @@
       <main class="main-layout">
 
         <div class="center">
-          <section id="galery"></section>
-          <h1>{{ site.data[page.lang].galery_title }}</h1>
+          <section id="gallery"></section>
+          <h1>{{ site.data[page.lang].gallery_title }}</h1>
 
           <!-- ====== Professional Projects ====== -->
 
           <!-- if there are any, create title -->
           {% if site.projects_professional.size > 0 %}
-            <h2 class="galery-section">{{ site.data[page.lang].projects_professional_title }}</h2>
+            <h2 class="gallery-section">{{ site.data[page.lang].projects_professional_title }}</h2>
           {% endif %}
 
           <!-- Loop trough projects -->
           {% assign sorted_projects_professional = site.projects_professional | sort: "order" %}
           {% for projects_professional in sorted_projects_professional %}
-            <div class="galery project-center">
+            <div class="gallery project-center">
               <section id="{{ projects_professional.section }}"></section>
               <!-- Project title -->
               {% if page.lang == 'en' %}
@@ -40,7 +40,7 @@
               {% endif %}
 
               <!-- Project info -->
-              <ul class="galery">
+              <ul class="gallery">
                 <li>{{ site.data[page.lang].projects_made_in }}: {{ projects_professional.made }}</li>
                 <li>{{ site.data[page.lang].projects_time_frame }}:
                   {% if page.lang == 'en' %}
@@ -65,13 +65,13 @@
 
           <!-- if there are any, create title -->
           {% if site.projects_personal.size > 0 %}
-            <h2 class="galery-section">{{ site.data[page.lang].projects_personal_title }}</h2>
+            <h2 class="gallery-section">{{ site.data[page.lang].projects_personal_title }}</h2>
           {% endif %}
 
           <!-- Loop trough projects -->
           {% assign sorted_projects_personal = site.projects_personal | sort: "order" %}
           {% for projects_personal in sorted_projects_personal %}
-            <div class="galery project-center">
+            <div class="gallery project-center">
               <section id={{projects_personal.section}}> </section>
               <!-- Project title -->
               {% if    page.lang == 'en' %}
@@ -89,7 +89,7 @@
               {% endif %}
 
               <!-- Project info -->
-              <ul class="galery">
+              <ul class="gallery">
                 <li> {{site.data[page.lang].projects_made_in}}: {{ projects_personal.made }} </li>
                 <li> {{site.data[page.lang].projects_time_frame}}:
                   {% if    page.lang == 'en' %}
