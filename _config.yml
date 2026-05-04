@@ -19,7 +19,7 @@ languages: ["en", "pt"]
 
 # --- Projects settings ---
 # maximum amount of projects to display on home page
-display_max_personal: 4
+display_max_personal: 5
 display_max_professional: 3
 
 collections:
